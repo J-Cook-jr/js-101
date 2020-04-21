@@ -1,18 +1,17 @@
-let good = 'twenty percent';
-let fair = 'fifthteen percent';
-let bad = 'ten percent';
-
-
-function tipAmount(service) {
-    
-    if ((service === good)) {
-        return ( 100 * .2);
+function tipAmount (bill, service) {
+    if (service == 'good') {
+      tip = bill * .2;
+      return('The tip for good service is $ ' + tip);
     }
-    else if ((service === fair)) {
-        return ( 100 * .15);
+    else if (service == 'fair') {
+      tip = bill * .15;
+      return('The tip for fair service is $ ' + tip);
     }
-    else if ((service === bad)) {
-        return ( 100 * .1);
+    else if (service == 'bad') {
+      tip = bill * .1;
+      return('The tip for bad service is $ ' +_tip);
     }
-}
-console.log (tipAmount(good));
+  }
+  
+  console.log(tipAmount(100, 'good'));
+  console.log(tipAmount(40, 'fair'));
